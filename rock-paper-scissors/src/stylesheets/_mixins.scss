@@ -1,0 +1,9 @@
+
+@mixin dark-radial-gradient{
+    background: #1e3756;
+    background: -webkit-radial-gradient(circle, #1e3756 0%, #15193c 100%);
+    background: radial-gradient(circle, #1e3756 0%, #15193c 100%);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

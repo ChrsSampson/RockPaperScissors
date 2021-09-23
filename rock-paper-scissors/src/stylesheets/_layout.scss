@@ -1,0 +1,53 @@
+body{
+    @include dark-radial-gradient
+}
+
+// Components
+.App{
+    padding: 2em;
+}
+
+.Scoreboard-wrapper{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:.5em;
+    margin-bottom: 1em;
+    border: 3px solid $grey-border;
+    border-radius: .5em;
+
+    .column{
+        .title{
+            justify-content: left;
+        }
+        .logo{
+            height:3em;
+            padding-left:.5em;
+        }
+    }
+
+    .score{
+        justify-content: center;
+        background-color: $score-bg;
+        padding:.5em;
+        border-radius: .25em;
+        height:1.5em;
+        width:1.5em;
+    }
+}
+
+
+// Gerneral Layout Classes
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .row{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
