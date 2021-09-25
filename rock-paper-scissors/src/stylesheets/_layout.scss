@@ -5,37 +5,22 @@ body{
 // Components
 .App{
     padding: 2em;
-}
 
-.Scoreboard-wrapper{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding:.5em;
-    margin-bottom: 1em;
-    border: 3px solid $grey-border;
-    border-radius: .5em;
-
-    .column{
-        .title{
-            justify-content: left;
-        }
-        .logo{
-            height:3em;
-            padding-left:.5em;
-        }
-    }
-
-    .score{
+    // Play area button container
+    .Play-area{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        background-color: $score-bg;
-        padding:.5em;
-        border-radius: .25em;
-        height:1.5em;
-        width:1.5em;
+        height:calc(100vh - 15em);
+    }
+
+    // Menu Button container
+    .Button-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 }
-
 
 // Gerneral Layout Classes
 .column{
@@ -48,6 +33,24 @@ body{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+    }
+}
+
+@media (min-width: $break-small){
+    .row{
+        max-width: calc(100vw - 10em);
+    }
+    .Play-area{
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media screen and (min-width: $break-medium){
+    .App{    
+        .Button-container{
+            justify-content: space-between;
+        }
     }
 }
 

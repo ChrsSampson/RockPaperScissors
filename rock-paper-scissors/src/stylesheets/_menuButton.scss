@@ -1,0 +1,13 @@
+// Rule Button
+.MenuButton-container{
+    padding:1em;
+    
+
+    .MenuButton{
+        background-color: transparent;
+        border-radius:.25em;
+        border: 2px solid $text-light;
+        padding:.25em 1.25em;
+        cursor: pointer;
+    }
+}

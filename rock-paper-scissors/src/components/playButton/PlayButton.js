@@ -23,7 +23,7 @@ export default function PlayButton(props) {
     }
 
      return (
-         <button className={`PlayButton PlayButton-${props.value}`} data-value={props.value} onClick={(e) => props.setPlayerMove(e)}>
+         <button className={`PlayButton PlayButton-${props.value}`} data-value={props.value} onClick={(e) => props.setPlayerMove ? props.setPlayerMove(e) : null}>
              <img src={icon} alt={`${props.value} Icon`} />
          </button>
      )

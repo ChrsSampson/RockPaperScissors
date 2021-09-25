@@ -2,14 +2,21 @@
 .PlayButton{
     border-radius: 50%;
     padding: 1.5em;
-    border: .75em solid #ccc;
+    border: .75em solid;
+    cursor: pointer;
+    // Shadow
+    -webkit-box-shadow: 0 10.5px 9px -2px rgba(84, 84, 84, 0.66);
+    -moz-box-shadow: 0 10.5px 9px -2px rgba(84, 84, 84, 0.66);
+    box-shadow: 0 10.5px 9px -2px rgba(84, 84, 84, 0.66);
+    // Shadow Inset
+    -webkit-box-shadow: inset 0 10.5px 9px -2px rgba(84, 84, 84, 0.66);
+    -moz-box-shadow: inset 0 10.5px 9px -2px rgba(84, 84, 84, 0.66);
+    box-shadow: inset 0 10.5px 9px -2px rgba(84, 84, 84, 0.66);
 
     img{
         height:3.5em;
     }
 }
-
-
 
 .PlayButton-rock{
     border-color: $rock-bg;
@@ -19,4 +26,26 @@
 }
 .PlayButton-scissors{
     border-color: $scissors-bg;
+}
+
+@media screen and (min-width: $break-small){
+    .PlayButton{
+        margin: 1.5em 2em;
+        border-width: 1.25em;
+
+        img{
+            height:5em;
+        }
+    }
+}
+
+@media screen and (min-width: $break-medium){
+    .PlayButton{
+        margin: 1.5em 3em;
+        border-width: 1.5em;
+
+        img{
+            height:6em;
+        }
+    }
 }

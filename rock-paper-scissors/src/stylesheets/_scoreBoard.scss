@@ -1,0 +1,56 @@
+// ScoreBoard
+.Scoreboard-wrapper{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:.5em;
+    margin-bottom: 1em;
+    border: 3px solid $grey-border;
+    border-radius: .5em;
+
+    .column{
+        .title{
+            justify-content: left;
+        }
+        .logo{
+            height:3em;
+            padding-left:.5em;
+        }
+    }
+
+    .score{
+        justify-content: center;
+        background-color: $score-bg;
+        padding:.5em;
+        border-radius: .25em;
+        height:1.5em;
+        width:1.5em;
+    }
+}
+
+@media screen and (min-width: $break-medium){
+    .Scoreboard-wrapper{
+        max-width: 50%;
+        margin: 0 auto;
+
+        .column{
+            .logo{
+                height:4em;
+            }
+        }
+    }
+    
+    
+}
+
+@media screen and (min-width: $break-large){
+    .Scoreboard-wrapper{
+        max-width: 35%;
+
+        .column{
+            .logo{
+                height:5em;
+            }
+        }
+    }
+}

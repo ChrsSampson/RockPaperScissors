@@ -3,6 +3,16 @@ body{
     font-family: 'Impact', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+// Generic Styles
+
+.title{
+    font-size: 2.5em;
+}
+
+.result-text{
+    font-size: 1.25em;
+}
+
 .score{
     font-size: 2em;
     font-weight: bold;
@@ -10,5 +20,25 @@ body{
 
     sub{
         font-size: 0.6rem;
+    }
+}
+
+// Specific Componet Styles
+
+.MenuButton{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: $text-light;
+}
+
+.Rules{
+    li{
+        margin:2em;
+    }
+}
+
+@media screen and (min-width: $break-medium){
+    .title{
+        font-size: 3em;
     }
 }
