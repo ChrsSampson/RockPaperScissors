@@ -79,6 +79,7 @@ function App() {
       }
     }
     CheckOutcome()
+  // eslint-disable-next-line
   }, [CompMove])
 
 
